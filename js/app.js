@@ -74,10 +74,45 @@ function getTestContentShowAndReturnValue(testContentId, showText){
 
     const getText = document.getElementById(testContentId);
 
-    getText.innerText = showText;
+    if(showText > 0){
+        getText.innerText = showText;
+    }else{
+        const paresTextContent = parseFloat(getText.innerText);
 
-    const paresTextContent = parseFloat(getText.innerText);
+        return paresTextContent;
+    }
+    
 
-    return paresTextContent;
+   
 }
 
+
+
+// saving calculation 
+
+document.getElementById('save-btn').addEventListener('click',function(event){
+
+    // console.log(event);
+
+    const saving = getInputValeAndParse('save');
+    const balance = getTestContentShowAndReturnValue('total-balance', 0);
+
+   // console.log("saving ", saving, " balance = ", balance);
+
+   const   savingInParsen = balance * saving /100;
+   const remaingBalance = balance - savingInParsen;
+    if(balance<savingInParsen){
+        errorMessage('saving-error-success', 'You can not saving  more than balance = '+balance, 'block');
+        return;
+    }else{
+        errorMessage('saving-error-success', '', 'none');
+    }
+  // console.log(savingInParsen);
+
+  getTestContentShowAndReturnValue('remaing-balance', remaingBalance);
+  getTestContentShowAndReturnValue('saving-amount', savingInParsen);
+
+    
+    
+    
+})
