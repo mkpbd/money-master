@@ -16,12 +16,69 @@
     
     <main class="container">
         <section class="row g-4">
-            <h2 class="text-center py-5 header--title">Money Master</h2>
+            <!--image section start -->
+            <h2 class="text-center py-3 header--title">Money Master</h2>
             <div class="col-sm-6">
-                <h2>Hello</h2>
+               <img src="images/calculation.jpg" alt="">
             </div>
-            <div class="col-sm-6">
-                <h2>Hello</h2>
+            <!-- Calculation Section Start -->
+            <div class="col-sm-6 bg-calculation px-4 py-2 text-center">
+                <h2>Income</h2>
+                <!-- form group elements -->
+                <div class="income-area">
+                    <div class="mb-2 row">
+                        <label for="income" class="col-sm-4 col-form-label">Income:</label>
+                        <div class="col-sm-8">
+                          <input type="text"  class="form-control form-control-sm input-bg" id="income">
+                        </div>
+                      </div>
+                    <div class="mb-2 row">
+                        <h3 class="fw-bolder">Expenses</h3>
+                        <label for="food" class="col-sm-4 col-form-label">Food:</label>
+                        <div class="col-sm-8">
+                          <input type="text"  class="form-control input-bg form-control-sm" id="food">
+                        </div>
+                      </div>
+
+                    <div class="mb-2 row">
+                        <label for="rent" class="col-sm-4 col-form-label">Rent:</label>
+                        <div class="col-sm-8">
+                          <input type="text"  class="form-control form-control-sm input-bg" id="rent">
+                        </div>
+                      </div>
+
+                    <div class="mb-2 row">
+                        <label for="cloth" class="col-sm-4 col-form-label">Clothes:</label>
+                        <div class="col-sm-8">
+                          <input type="text"  class="form-control form-control-sm input-bg" id="cloth">
+                        </div>
+                      </div>
+                    <div class="mb-2 row">
+                        <label for="cloth" class="col-sm-4 col-form-label"></label>
+                        <div class="col-sm-8 text-start">
+                          <button class="btn btn-lg btn-info text-white px-4" type="button" role="button">Calculate</button>
+                        </div>
+                      </div>
+                </div>
+
+                <div>
+                    <h4>Total Expenses: <span id="total-expense">5500</span> </h4>
+                    <h4>Balance: <span id="total-balance">4500</span></h4>
+                
+                </div>
+
+                <div class="text-center my-2">
+                    <div class="row row-cols-4 justify-content-center align-items-center">
+                        <label for="save" class="col-sm-2 col-form-label">Save</label>
+                        <div class="col-sm-2 text-start">
+                            <input type="text"  class="form-control form-control-sm input-bg" id="save">
+                        </div>
+                        <label for="cloth" class="col-sm-1 col-form-label">%</label>
+                        <div class="col-sm-4 text-start">
+                            <button class="btn btn-sm btn-info text-white px-4" type="button" role="button">Calculate</button>
+                          </div>
+                      </div>
+                   </div>
             </div>
 
 
