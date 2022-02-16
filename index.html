@@ -30,6 +30,7 @@
                         <label for="income" class="col-sm-4 col-form-label">Income:</label>
                         <div class="col-sm-8">
                           <input type="text"  class="form-control form-control-sm input-bg" id="income">
+                          <h2 class="text-start" id="income-error-success"></h2>
                         </div>
                       </div>
                     <div class="mb-2 row">
@@ -37,6 +38,7 @@
                         <label for="food" class="col-sm-4 col-form-label">Food:</label>
                         <div class="col-sm-8">
                           <input type="text"  class="form-control input-bg form-control-sm" id="food">
+                          <h2 class="text-start" id="food-error-success"></h2>
                         </div>
                       </div>
 
@@ -44,6 +46,7 @@
                         <label for="rent" class="col-sm-4 col-form-label">Rent:</label>
                         <div class="col-sm-8">
                           <input type="text"  class="form-control form-control-sm input-bg" id="rent">
+                          <h2 class="text-start" id="rent-error-success"></h2>
                         </div>
                       </div>
 
@@ -51,12 +54,13 @@
                         <label for="cloth" class="col-sm-4 col-form-label">Clothes:</label>
                         <div class="col-sm-8">
                           <input type="text"  class="form-control form-control-sm input-bg" id="cloth">
+                          <h2 class="text-start" id="cloth-error-success"></h2>
                         </div>
                       </div>
                     <div class="mb-2 row">
                         <label for="cloth" class="col-sm-4 col-form-label"></label>
                         <div class="col-sm-8 text-start">
-                          <button class="btn btn-lg btn-info text-white px-4" type="button" role="button">Calculate</button>
+                          <button class="btn btn-lg btn-info text-white px-4" id="calculate-expense" type="button" role="button">Calculate</button>
                         </div>
                       </div>
                 </div>
@@ -68,14 +72,16 @@
                 </div>
 
                 <div class="text-center my-2">
-                    <div class="row row-cols-4 justify-content-center align-items-center">
+                    <div class="row row-cols-3 justify-content-center align-items-center">
                         <label for="save" class="col-sm-2 col-form-label">Save</label>
-                        <div class="col-sm-2 text-start">
-                            <input type="text"  class="form-control form-control-sm input-bg" id="save">
+                        <div class="col-sm-3 text-start">
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control input-bg" id="save">
+                                <span class="input-group-text input-bg">%</span>
+                              </div>
                         </div>
-                        <label for="cloth" class="col-sm-1 col-form-label">%</label>
                         <div class="col-sm-4 text-start">
-                            <button class="btn btn-sm btn-info text-white px-4" type="button" role="button">Calculate</button>
+                            <button class="btn btn-sm btn-info text-white px-4" type="button" role="button">Save</button>
                           </div>
                       </div>
 
