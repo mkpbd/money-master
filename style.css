@@ -17,6 +17,14 @@ body{
 }
 
 .show-text{
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 22px;
+}
+.button-text{
+    font-size: 20;
+    font-weight: 700;
+}
+label{
+    font-size: 18px;
 }
