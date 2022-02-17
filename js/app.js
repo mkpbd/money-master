@@ -104,8 +104,8 @@ document
             }
 
             /*====================== Show Data ===============*/
-                setTextContentValue("total-expense", totalExpense);
-                setTextContentValue("total-balance", balance);
+                setTextContentValue("total-expense", totalExpense.toFixed(2));
+                setTextContentValue("total-balance", balance.toFixed(2));
 
     //console.log("income = ", income , ' Food = ', food, " rend = ", rent, " cloth = ", cloth);
   });
@@ -117,7 +117,7 @@ document
 function getInputValeAndParse(inputId) {
 
     const getInput = document.getElementById(inputId);
-    const parseInput = parseFloat(getInput.value);
+    const parseInput = parseFloat(getInput.value,);
     return parseInput;
 
 }
@@ -227,6 +227,6 @@ document.getElementById("save-btn").addEventListener("click", function (event) {
           
 
             /*================== show data  ============== */
-            setTextContentValue("remaing-balance", remaingBalance);
-            setTextContentValue("saving-amount", savingInParsen);
+            setTextContentValue("remaing-balance", remaingBalance.toFixed(2));
+            setTextContentValue("saving-amount", savingInParsen.toFixed(2));
 });
