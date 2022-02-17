@@ -28,3 +28,14 @@ body{
 label{
     font-size: 18px;
 }
+
+@media  (max-width:500px){
+    .saving{
+        padding: 5px 15px !important;
+    }
+
+    .grid-2-cols{
+        display: grid;
+        grid-template-columns: 100px auto;
+    }
+}

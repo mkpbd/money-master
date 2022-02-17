@@ -18,7 +18,7 @@
   <body>
     
     <main class="container">
-        <section class="row g-4">
+        <section class="row g-4 justify-content-sm-center">
             <!--image section start -->
             <h2 class="text-center py-3 header--title">Money Master <span class="ms-2">	
               &#128176;</span></h2>
@@ -30,15 +30,16 @@
                 <h2 class="h2">Income</h2>
                 <!-- form group elements -->
                 <div class="income-area">
-                    <div class="mb-2 row">
+                    <div class="mb-2 row grid-2-cols">
                         <label for="income" class="col-sm-4 col-form-label">Income:</label>
                         <div class="col-sm-8">
                           <input type="text"  class="form-control form-control-sm input-bg" id="income">
                           <h2 class="text-start" id="income-error-success"></h2>
                         </div>
                       </div>
-                    <div class="mb-2 row">
-                        <h3 class="fw-bolder">Expenses</h3>
+                      <h3 class="fw-bolder">Expenses</h3>
+                    <div class="mb-2 row grid-2-cols">
+                       
                         <label for="food" class="col-sm-4 col-form-label">Food:</label>
                         <div class="col-sm-8">
                           <input type="text"  class="form-control input-bg form-control-sm" id="food">
@@ -46,7 +47,7 @@
                         </div>
                       </div>
 
-                    <div class="mb-2 row">
+                    <div class="mb-2 row grid-2-cols">
                         <label for="rent" class="col-sm-4 col-form-label">Rent:</label>
                         <div class="col-sm-8">
                           <input type="text"  class="form-control form-control-sm input-bg" id="rent">
@@ -54,7 +55,7 @@
                         </div>
                       </div>
 
-                    <div class="mb-2 row">
+                    <div class="mb-2 row grid-2-cols">
                         <label for="cloth" class="col-sm-4 col-form-label">Clothes:</label>
                         <div class="col-sm-8">
                           <input type="text"  class="form-control form-control-sm input-bg" id="cloth">
@@ -85,7 +86,7 @@
                               </div>
                         </div>
                         <div class="col-sm-4 text-start">
-                            <button id="save-btn" class="btn btn-md btn-info text-white my-2 px-5 button-text" type="button" role="button">Save</button>
+                            <button id="save-btn" class="btn btn-md btn-info text-white my-2 px-5 saving button-text" type="button" role="button">Save</button>
                           </div>
                       </div>
                       <h2 class="text-start" id="saving-error-success"></h2>
