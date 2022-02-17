@@ -74,7 +74,7 @@ function getTestContentShowAndReturnValue(testContentId, showText){
 
     const getText = document.getElementById(testContentId);
 
-    if(showText > 0){
+    if(showText >= 0){
         getText.innerText = showText;
     }else{
         const paresTextContent = parseFloat(getText.innerText);

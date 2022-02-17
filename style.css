@@ -8,7 +8,9 @@ body{
     font-size: 48px;
     font-weight: 700;
 }
-
+.image-height{
+    min-height: 650px;
+}
 .bg-calculation{
     background-color: #F8F8F8;
 }
@@ -47,5 +49,12 @@ label{
     
     .col-sm-3.text-start {
         position: relative;
+    }
+    
+}
+
+@media (max-width:767px) {
+    .image-height{
+        min-height: auto;
     }
 }
