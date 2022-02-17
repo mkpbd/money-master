@@ -19,16 +19,16 @@
     
     <main class="container">
         <section class="row g-4 justify-content-sm-center">
-            <!--image section start -->
-            <h2 class="text-center py-3 header--title">Expenses calculator <span class="ms-2">	
+            <!-- ========================= image section start ==========================-->
+            <h2 class="text-center pt-3 header--title">Expenses calculator <span class="ms-2">	
               &#128176;</span></h2>
             <div class="col-sm-10 col-md-6">
                <img class="img-fluid image-height" src="images/calculation1.jpg" alt="">
             </div>
-            <!-- Calculation Section Start -->
+            <!-- ================== Calculation Section Start ===============================-->
             <div class="col-sm-10 col-md-6 bg-calculation px-5 py-2 text-center rounded">
                 <h2 class="h2">Income</h2>
-                <!-- form group elements -->
+                <!-- ======================== form group elements======================= -->
                 <div class="income-area">
                     <div class="mb-2 row grid-2-cols">
                         <label for="income" class="col-sm-4 col-form-label">Income:</label>
@@ -38,6 +38,7 @@
                         </div>
                       </div>
                       <h3 class="fw-bolder">Expenses</h3>
+                      <!-- ======================= food input field=========================== -->
                     <div class="mb-2 row grid-2-cols">
                        
                         <label for="food" class="col-sm-4 col-form-label">Food:</label>
@@ -46,7 +47,7 @@
                           <h2 class="text-start" id="food-error-success"></h2>
                         </div>
                       </div>
-
+                      <!--=============== rent input filed================== -->
                     <div class="mb-2 row grid-2-cols">
                         <label for="rent" class="col-sm-4 col-form-label">Rent:</label>
                         <div class="col-sm-8">
@@ -54,7 +55,7 @@
                           <h2 class="text-start" id="rent-error-success"></h2>
                         </div>
                       </div>
-
+                      <!--=============== cloth field area ==============-->
                     <div class="mb-2 row grid-2-cols">
                         <label for="cloth" class="col-sm-4 col-form-label">Clothes:</label>
                         <div class="col-sm-8">
@@ -69,14 +70,16 @@
                         </div>
                       </div>
                 </div>
-
-                <div>
+                <!--================= Total expanse area ====================-->
+                <div class="total-expense area">
                   <h2 class="text-center" id="balance-error-success"></h2>
                     <h4 class="show-text">Total Expenses: <span id="total-expense">0</span> </h4>
                     <h4 class="show-text">Balance: <span id="total-balance">0</span></h4>
+
+                    <h2 class="text-center" id="zero-error-success"></h2>
                 
                 </div>
-
+                <!-- ====================== saving input field area ========================-->
                 <div class="text-center my-2">
                     <div class="row row-cols-3 justify-content-center align-items-center">
                         <label for="save" class="col-sm-2 col-form-label">Save</label>
@@ -90,7 +93,10 @@
                             <button id="save-btn" class="btn btn-md btn-info text-white my-2 px-5 saving button-text" type="button" role="button">Save</button>
                           </div>
                       </div>
+
+                      <!--=============== show saving area and remaing data ==================-->
                       <h2 class="text-center" id="saving-error-success"></h2>
+                      <h2 class="text-center" id="result"></h2>
                       <h4 class="show-text">Saving Amount: <span id="saving-amount">0</span> </h4>
                       <h4 class="show-text">Remaining Balance:   <span id="remaing-balance">0</span> </h4>
                    </div>

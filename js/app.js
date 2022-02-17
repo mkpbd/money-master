@@ -167,43 +167,65 @@ document.getElementById("save-btn").addEventListener("click", function (event) {
         const saving = getInputValeAndParse("save");
         const balance = getTextConvetValue("total-balance");
 
+        //console.log("balance = ", balance);
         // console.log("saving ", saving, " balance = ", balance);
             /*=============== cheack balance zerro or more  =================== */
+          //  debugger;
         if (isNaN(balance)) {
-            errorMessage("saving-error-success", "Your balance is not enough", "block");
-            return;
+            errorMessage("zero-error-success", "Your balance is not enough", "block");
+           
+        } else if(balance <= 0){
+          errorMessage("zero-error-success", "Balance zero Or less", "block");
+          
         }  else {
-            errorMessage("saving-error-success", "", "none");
+            errorMessage("zero-error-success", "", "none");
         }
 
         
         /*=============== input saving file validation =================== */
+      //  debugger;
         if (isNaN(saving)) {
             errorMessage("saving-error-success", "String are not allow", "block");
-            return;
+            
         } else if (saving <= 0) {
             errorMessage("saving-error-success", "Place Give Valid Number ", "block");
-            return;
+          
         } else {
             errorMessage("saving-error-success", "", "none");
         }
-        /*=============== calculation  savings ============= */
-        const savingInParsen = (balance * saving) / 100;
-        const remaingBalance = balance - savingInParsen;
+       
 
   // console.log(savingInParsen);
 
+  /*========================= calculation  savings ============================== */
+
+           const savingInParsen = (balance * saving) / 100;
+           const remaingBalance = balance - savingInParsen;
+
   /*===========================  balance and saving balance Validation =================== */
-            if (balance < savingInParsen) {
+        if(balance == 0){
+          errorMessage(
+            "result",
+            "You Balance is  = " + balance,
+            "block"
+            );
+        }
+       else  if (balance < savingInParsen) {
                 errorMessage(
-                "saving-error-success",
+                "result",
                 "You can not saving  more than balance = " + balance,
                 "block"
                 );
-                return;
+               
             } else {
-                errorMessage("saving-error-success", "", "none");
+                errorMessage("result", "", "none");
             }
+
+            if(balance <=0 || saving <= 0 || (savingInParsen > balance)){
+              return ;
+            }
+          
+
             /*================== show data  ============== */
             setTextContentValue("remaing-balance", remaingBalance);
             setTextContentValue("saving-amount", savingInParsen);
