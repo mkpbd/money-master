@@ -1,5 +1,12 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 .header--title{
     color:#31A5AC;
+    font-family: 'Montserrat';
+    font-size: 48px;
+    font-weight: 700;
 }
 
 .bg-calculation{
@@ -7,4 +14,9 @@
 }
 .input-bg{
     background-color: #DCDCDC;
+}
+
+.show-text{
+    font-weight: 500;
+    font-size: 22px;
 }
