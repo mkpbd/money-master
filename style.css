@@ -1,15 +1,19 @@
 body{
     font-family: 'Roboto', sans-serif;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    /* background: linear-gradient(90deg, rgba(26,128,177,1) 0%, rgba(26,26,180,1) 50%, rgba(0,212,255,1) 100%); */
 }
 
+
 .header--title{
-    color:#31A5AC;
+    /* color:#31A5AC; */
+    color:#ffffff;
     font-family: 'Montserrat';
     font-size: 48px;
     font-weight: 700;
 }
 .image-height{
-    min-height: 650px;
+    min-height: 675px;
 }
 .bg-calculation{
     background-color: #F8F8F8;
